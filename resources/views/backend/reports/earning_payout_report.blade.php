@@ -14,7 +14,7 @@
             <div class="row gutters-16">
 
                 <!-- Sale Report -->
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="dashboard-box bg-white h-220px mb-2rem overflow-hidden" style="min-height: 370px">
                         <div class="d-flex flex-column justify-content-between h-100">
                             <div class="">
@@ -52,8 +52,8 @@
                     </div>
                 </div>
 
-                <!-- Payout Report -->
-                <div class="col-sm-3">
+                {{-- <!-- Payout Report -->
+                <div class="col-sm-4">
                     <div class="dashboard-box bg-white h-220px mb-2rem overflow-hidden" style="min-height: 370px">
                         <div class="d-flex flex-column justify-content-between h-100">
                             <div class="">
@@ -89,10 +89,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 <!-- Total Category -->
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="dashboard-box bg-white h-220px mb-2rem overflow-hidden" style="min-height: 370px">
                         <div class="h-100">
                             <div class="d-flex justify-content-between mb-4">
@@ -143,7 +143,7 @@
                 </div>
 
                 <!-- Total Brands -->
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <div class="dashboard-box bg-white h-220px mb-2rem overflow-hidden" style="min-height: 370px">
                         <div class="h-100">
                             <div class="d-flex justify-content-between mb-4">
@@ -247,7 +247,7 @@
         </div>
 
         <!-- Payouts -->
-        <div class="col-lg-6">
+        {{-- <div class="col-lg-6">
             <div class="dashboard-box bg-white mb-2rem overflow-hidden p-2rem" style="">
                 <!-- Header -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-3">
@@ -292,7 +292,7 @@
                     <canvas id="graph-4" class="w-100" height="250"></canvas>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Sale Analytics -->
         <div class="col-lg-6">
@@ -341,7 +341,7 @@
             </div>
         </div>
 
-        <!-- Payouts Analytics -->
+        {{-- <!-- Payouts Analytics -->
         <div class="col-lg-6">
             <div class="dashboard-box bg-white mb-2rem overflow-hidden p-2rem" style="">
                 <!-- Header -->
@@ -386,7 +386,7 @@
                     <canvas id="graph-6" class="w-100" height="250"></canvas>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 @endsection
 

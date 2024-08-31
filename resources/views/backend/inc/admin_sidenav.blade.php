@@ -691,13 +691,13 @@
                                     </a>
                                 </li>
                             @endcan
-                            @can('seller_products_sale_report')
+                            {{-- @can('seller_products_sale_report')
                                 <li class="aiz-side-nav-item">
                                     <a href="{{ route('seller_sale_report.index') }}" class="aiz-side-nav-link {{ areActiveRoutes(['seller_sale_report.index'])}}">
                                         <span class="aiz-side-nav-text">{{ translate('Seller Products Sale') }}</span>
                                     </a>
                                 </li>
-                            @endcan
+                            @endcan --}}
                             @can('products_stock_report')
                                 <li class="aiz-side-nav-item">
                                     <a href="{{ route('stock_report.index') }}" class="aiz-side-nav-link {{ areActiveRoutes(['stock_report.index'])}}">
@@ -719,7 +719,7 @@
                                     </a>
                                 </li>
                             @endcan
-                            @can('commission_history_report')
+                            {{-- @can('commission_history_report')
                                 <li class="aiz-side-nav-item">
                                     <a href="{{ route('commission-log.index') }}" class="aiz-side-nav-link">
                                         <span class="aiz-side-nav-text">{{ translate('Commission History') }}</span>
@@ -732,7 +732,7 @@
                                         <span class="aiz-side-nav-text">{{ translate('Wallet Recharge History') }}</span>
                                     </a>
                                 </li>
-                            @endcan
+                            @endcan --}}
                         </ul>
                     </li>
                 @endcanany
@@ -1266,13 +1266,13 @@
                             <span class="aiz-side-nav-arrow"></span>
                         </a>
                         <ul class="aiz-side-nav-list level-2">
-                            @can('select_homepage')
+                            {{-- @can('select_homepage')
                                 <li class="aiz-side-nav-item">
                                     <a href="{{ route('website.select-homepage') }}" class="aiz-side-nav-link">
                                         <span class="aiz-side-nav-text">{{translate('Select Homepage')}}</span>
                                     </a>
                                 </li>
-                            @endcan
+                            @endcan --}}
                             @can('edit_website_page')
                                 <li class="aiz-side-nav-item">
                                     <a href="{{ route('custom-pages.edit', ['id'=>'home', 'lang'=>env('DEFAULT_LANGUAGE'), 'page'=>'home']) }}"
@@ -1570,7 +1570,7 @@
                     </li>
                 @endcanany
 
-                <!-- System Update & Server Status -->
+                {{-- <!-- System Update & Server Status -->
                 @canany(['system_update','server_status'])
                     <li class="aiz-side-nav-item">
                         <a href="#" class="aiz-side-nav-link">
@@ -1628,10 +1628,10 @@
                             @endcan
                         </ul>
                     </li>
-                @endcanany
+                @endcanany --}}
 
                 <!-- Addon Manager -->
-                @can('manage_addons')
+                {{-- @can('manage_addons')
                     <li class="aiz-side-nav-item">
                         <a href="{{route('addons.index')}}" class="aiz-side-nav-link {{ areActiveRoutes(['addons.index', 'addons.create'])}}">
                             <div class="aiz-side-nav-icon">
@@ -1642,7 +1642,7 @@
                             <span class="aiz-side-nav-text">{{translate('Addon Manager')}}</span>
                         </a>
                     </li>
-                @endcan
+                @endcan --}}
             </ul><!-- .aiz-side-nav -->
         </div><!-- .aiz-side-nav-wrap -->
     </div><!-- .aiz-sidebar -->
