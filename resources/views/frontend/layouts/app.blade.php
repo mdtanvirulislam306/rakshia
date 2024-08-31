@@ -242,10 +242,7 @@
     </div>
 
 
-    @if (env("DEMO_MODE") == "On")
-        <!-- demo nav -->
-        @include('frontend.inc.demo_nav')
-    @endif
+  
 
     <!-- cookies agreement -->
     @php

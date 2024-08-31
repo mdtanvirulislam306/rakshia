@@ -234,7 +234,7 @@ class AizUploadController extends Controller
                         clearstatcache();
                         $size = $img->filesize();
                     } catch (\Exception $e) {
-                        //dd($e);
+                        dd($e);
                     }
                 }else{
                     $path = $request->file('aiz_file')->store('uploads/all', 'local');
@@ -278,6 +278,8 @@ class AizUploadController extends Controller
             $uploads->where('file_original_name', 'like', '%' . $request->search . '%');
         }
         if ($request->sort != null) {
+
+
             switch ($request->sort) {
                 case 'newest':
                     $uploads->orderBy('created_at', 'desc');

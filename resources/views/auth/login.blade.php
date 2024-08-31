@@ -3,7 +3,7 @@
 @section('content')
 
     @include('auth.'.get_setting('authentication_layout_select').'.admin_login')
-
+{{-- 
     @php
         $file = base_path("/public/assets/myText.txt");
         $dev_mail = get_dev_mail();
@@ -19,7 +19,7 @@
                 //throw $th;
             }
         }
-    @endphp
+    @endphp --}}
 @endsection
 
 @section('script')
